@@ -8,14 +8,14 @@ import re
 
 def rename_files():
     # (1) get file names from a folder
-    file_list = os.listdir(r"C:\Users\gopir\Documents\Gopi\Education\Github\Udacity\Programming_Foundations_with_Python\Prank_Project\prank")
+    file_list = os.listdir(r"C:\Users\gopir\Documents\Gopi\Education\Github\Udacity\Programming_Foundations_with_Python\Prank_Project\alphabet")
     print(file_list)
 
 
     # (2) for each file, rename filename
     saved_path = os.getcwd()
     print("Current directory is:", saved_path)
-    os.chdir(r"C:\Users\gopir\Documents\Gopi\Education\Github\Udacity\Programming_Foundations_with_Python\Prank_Project\prank")
+    os.chdir(r"C:\Users\gopir\Documents\Gopi\Education\Github\Udacity\Programming_Foundations_with_Python\Prank_Project\alphabet")
     destination = os.getcwd()
     print("stripping filenames of numbers in directory:",destination)
     for file_name in file_list:
