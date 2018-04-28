@@ -1,3 +1,7 @@
+"""
+Docstring:
+Implements the famous pomodoro technique using selenium Chrome webdriver and the time module from python standard library
+"""
 #module import
 from selenium import webdriver
 import time
