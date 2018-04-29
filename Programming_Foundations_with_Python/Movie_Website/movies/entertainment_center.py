@@ -1,4 +1,5 @@
 import media
+import fresh_tomatoes
 
 toy_story = media.Movie("Toy Story",
                         "A story of a boy and his toys that come to life",
@@ -10,12 +11,25 @@ avatar = media.Movie("Avatar",
                     "http://upload.wikimedia.org/wikipedia/id/b/b0/Avatar-Teaser-Poster.jpg",
                     "https://www.youtube.com/watch?v=5PSNL1qE6VY")
 
-avengers = media.Movie("Avengers: Infinity War",
-                    "The Avengers and their Super Hero allies must be willing to sacrifice all in an attempt to defeat the powerful Thanos.",
-                    "https://www.movieinsider.com/images/p/600//488741_m1522889808.jpg",
-                    "https://www.youtube.com/watch?v=6ZfuNTqbHE8")
+hunger_games = media.Movie("Hunger Games",
+                        "Storyline",
+                        "http://upload.wikimedia.org/wikipedia/en/4/42/HungerGamesPoster.jpg",
+                        "https://www.youtube.com/watch?v=PbA63a7H0bo")
 
-#print(toy_story.storyline)
-#print(avatar.storyline)
-#avatar.show_trailer()
-avengers.show_trailer()
+school_of_rock = media.Movie("School of Rock",
+                            "Storyline",
+                            "http://upload.wikimedia.org/wikipedia/en/1/11/School_of_Rock_Poster.jpg",
+                            "https://www.youtube.com/watch?v=3PsUJFEBC74")
+
+ratatouille = media.Movie("Ratatouille",
+                        "Storyline",
+                        "http://upload.wikimedia.org/wikipedia/en/5/50/RatatouillePoster.jpg",
+                        "https://www.youtube.com/watch?v=c3sBBRxDAqk")
+
+midnight_in_paris = media.Movie("Midnight in Paris",
+                                "Storyline",
+                                "http://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg",
+                                "https://www.youtube.com/watch?v=atLg2wQQxvU")
+
+movies = [toy_story, avatar, hunger_games, school_of_rock, ratatouille, midnight_in_paris]
+fresh_tomatoes.open_movies_page(movies)
