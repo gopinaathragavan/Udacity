@@ -31,6 +31,11 @@ midnight_in_paris = media.Movie("Midnight in Paris",
                                 "http://upload.wikimedia.org/wikipedia/en/9/9f/Midnight_in_Paris_Poster.jpg",
                                 "https://www.youtube.com/watch?v=atLg2wQQxvU")
 
-movies = [toy_story, avatar, hunger_games, school_of_rock, ratatouille, midnight_in_paris]
-#fresh_tomatoes.open_movies_page(movies)
+# print(media.Movie.__name__)
+# print(media.Movie.__module__)
+
+print(media.Movie.__doc__)
 print(media.Movie.VALID_RATINGS)
+
+movies = [toy_story, avatar, hunger_games, school_of_rock, ratatouille, midnight_in_paris]
+fresh_tomatoes.open_movies_page(movies)
