@@ -10,6 +10,15 @@ def draw_square(turtle):
         turtle.forward(50)
         turtle.right(90)
 
+def draw_triangle(turtle):
+    turtle.right(45)
+    turtle.forward(100)
+    turtle.right(90)
+    turtle.forward(100)
+    turtle.right(135)
+    turtle.forward(135)
+
+
 def draw_art():
     window = turtle.Screen()
     window.bgcolor("orange")
@@ -27,15 +36,24 @@ def draw_art():
     Sahana.shape("turtle")
     Sahana.color("purple")
     Sahana.speed(1)
-    Sahana.right(45)
-    Sahana.forward(100)
-    Sahana.right(90)
-    Sahana.forward(100)
-    Sahana.right(135)
-    Sahana.forward(135)
+    draw_triangle(Sahana)
     window.exitonclick()
 
-draw_art()
+def draw_fractal(square_count):
+    window = turtle.Screen()
+    window.bgcolor("orange")
+    Gopi = turtle.Turtle()
+    Gopi.shape("turtle")
+    Gopi.color("red")
+    Gopi.speed(2)
+    for i in range(square_count):
+        Gopi.right(360/square_count)
+        draw_square(Gopi)
+    window.exitonclick()
+
+square_count = input("Enter number of squares for circular fractal as a positive whole number: ")   
+draw_fractal(int(square_count))
+#draw_art()
 
 
 
