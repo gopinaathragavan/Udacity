@@ -19,14 +19,11 @@ class Child(Parent):
             print("Eye Color - "+self.eye_color)
             print("Number of toys - "+str(self.number_of_toys)
 
-billy_cyrus = Parent("Cyrus", "blue")
+#billy_cyrus = Parent("Cyrus", "blue")
 #print(billy_cyrus.last_name)
-billy_cyrus.show_info()
+#billy_cyrus.show_info()
 
 #miley_cyrus = Child("Cyrus", "Blue", 5)
 # print(miley_cyrus.last_name)
 # print(miley_cyrus.number_of_toys)
 #miley_cyrus.show_info()
-
-del vars
-
