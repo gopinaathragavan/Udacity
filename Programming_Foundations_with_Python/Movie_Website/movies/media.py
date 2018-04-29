@@ -1,8 +1,12 @@
 import webbrowser
 
+class Video():
+    def __init__(self, title, duration):
+        self.title = title
+        self.duration = duration
+        
+
 class Movie():
-    """ This class provides a way to store movie related information
-    """
     VALID_RATINGS = ["G", "PG", "PG-13", "R"]
 
     def __init__(self, movie_title, movie_storyline, poster_image, trailer_youtube):
@@ -13,3 +17,17 @@ class Movie():
     
     def show_trailer(self):
         webbrowser.open(self.trailer_youtube_url)
+
+class TvShow(Video):
+    def __init__(self, season, episode, tv_station):
+        Video.__init__(self, title, duration)
+        self.season = season
+        self.episode = episode
+        self.tv_station = tv_station
+
+    def get_local_listing(self):
+        print(self.title)
+        print(self.duration)
+        print(self.season)
+        print(self.episode)
+        print(self.tv_station)
